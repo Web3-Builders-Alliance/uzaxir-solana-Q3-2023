@@ -19,7 +19,7 @@ pub fn airdrop() {
 
     let client = RpcClient::new(RPC_URL);
 
-    match client.request_airdrop(&keypair.pubkey(), 2_000_000_000u64) {
+    match client.request_airdrop(&keypair.pubkey(), 10) {
         Ok(signature) => {
             println!("Success! Airdrop TX signature: {}", signature);
             println!(

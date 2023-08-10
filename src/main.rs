@@ -1,8 +1,10 @@
 mod airdrop;
+mod transfer;
+mod empty_wallet;
+mod programs;
 
 use solana_sdk::signer::keypair::Keypair;
 use solana_sdk::signature::Signer;
-use airdrop::airdrop;
 
 fn keygen() {
     let kp = Keypair::new();
@@ -12,6 +14,6 @@ fn keygen() {
 }
 
 fn main() {
-    println!("Calling the airdrop function:");
-    airdrop();
+    println!("Calling the transfer_sol function:");
+    empty_wallet::empty_wallet();
 }
