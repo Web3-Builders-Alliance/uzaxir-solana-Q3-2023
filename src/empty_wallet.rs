@@ -17,7 +17,7 @@ pub fn empty_wallet() -> Result<(), Box<dyn std::error::Error>> {
 
     let rpc_client = RpcClient::new(RPC_URL);
 
-    let to_pubkey = Pubkey::from_str("9aHNonohnvk4uTSk1iCunPwDLZ9r3D6A3jTjSi5atnB3")?;
+    let to_pubkey = Pubkey::from_str("FoJUCuKaHFE1J3k5GSvBd6DLUfavXRUzAq6bYt5LVBq7")?;
 
     let balance = rpc_client.get_balance(&keypair.pubkey())?;
 

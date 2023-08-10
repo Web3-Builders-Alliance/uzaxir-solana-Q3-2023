@@ -27,7 +27,7 @@ pub fn transfer_sol() {
 
     let rpc_client = RpcClient::new(RPC_URL);
     let recent_blockhash = rpc_client.get_latest_blockhash().expect("Failed to get recent blockhash");
-    let to_pubkey = Pubkey::from_str("9aHNonohnvk4uTSk1iCunPwDLZ9r3D6A3jTjSi5atnB3").unwrap();
+    let to_pubkey = Pubkey::from_str("FoJUCuKaHFE1J3k5GSvBd6DLUfavXRUzAq6bYt5LVBq7").unwrap();
 
     let transaction = Transaction::new_signed_with_payer(
         &[transfer(
